@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: siddha-api
+    env: node
+    plan: free
+    buildCommand: 'npm install'
+    startCommand: 'npm start'
+    envVars:
+      - key: DATABASE_HOST
+        value: localhost
+      - key: DATABASE_USER
+        value: root
+      - key: DATABASE_PASSWORD
+        value: root
+      - key: DATABASE_NAME
+        value: siddha
